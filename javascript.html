@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>enter between 1 -5</p>
+        <input id="inp" type="text">
+        <button id="but">SUBMIT</button>
+        <script>
+            var uservalue=0;
+            document.getElementById("but").onclick=function(){
+                var useravlue=document.getElementById("inp").value
+               var answer= Math.floor(Math.random()*5)+1;
+               if(uservalue==answer){
+               alert("you win");}
+               else{
+alert("you loose");
+               }
+            }
+        </script>
+    </body>
+</html>
